@@ -5,7 +5,6 @@ from matplotlib import pyplot as ppl
 from tqdm import tqdm
 from tkinter import simpledialog as sd
 import numpy as np
-import datetime
 
 """ Constant Declaration """
 
@@ -65,4 +64,7 @@ ppl.tick_params(axis='y', which='both', right=False, left=False, labelleft=False
 for pos in ['right', 'top', 'bottom', 'left']:
     ppl.gca().spines[pos].set_visible(False)
 
+
+
 ppl.show()
+
