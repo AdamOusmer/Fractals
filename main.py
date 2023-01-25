@@ -32,6 +32,7 @@ for i in tqdm(temporaryTable):
         x.append(i)
         y.append(k)
 
+
 """ Calculation for the colors """
 
 print("Generating values...")
@@ -40,11 +41,12 @@ nbIterationsMade = []
 
 for i in tqdm(range(len(x))):
     k = 0
-    z = 0 + 0j
+    z = x[i] + (y[i] *1j)
 
     while np.absolute(z) < 3 and k < nbIteration:
         k += 1
-        z = z ** 2 + c
+        z = pow(z, 2) + c
+
 
     nbIterationsMade.append(k)
 
