@@ -1,20 +1,17 @@
 """ Program for generation of fractals base on z(n+1) = zn ^ 2 + c"""
 
 """ Imports """
-
-import numpy as np
 from matplotlib import pyplot as ppl
 from tqdm import tqdm
-import datetime
 from tkinter import simpledialog as sd
-
+import numpy as np
+import datetime
 
 """ Constant Declaration """
 
 sizePoints = 00.1
-sizeImage = 500 # number of pixels on one side of the picture
+sizeImage = 500  # number of pixels on one side of the picture
 nbIteration = 60
-
 
 """ Ask for inputs and creating the number """
 
@@ -22,7 +19,6 @@ a = sd.askfloat("Real Value", "Please enter here the real value.")
 b = sd.askfloat("Imaginary Value", "Please enter here the imaginary value.")
 
 c = a + (b * 1j)
-
 
 """ Creating Grid """
 
@@ -36,7 +32,6 @@ for i in tqdm(temporaryTable):
         x.append(i)
         y.append(k)
 
-
 """ Calculation for the colors """
 
 print("Generating values...")
@@ -47,13 +42,11 @@ for i in tqdm(range(len(x))):
     k = 0
     z = 0 + 0j
 
-    while np.absolute(z)<3 and k < nbIteration:
-
+    while np.absolute(z) < 3 and k < nbIteration:
         k += 1
-        z = z**2 + c
+        z = z ** 2 + c
 
     nbIterationsMade.append(k)
-
 
 """ Creating picture with matplotlib.pyplot"""
 
