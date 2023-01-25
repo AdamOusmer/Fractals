@@ -1,8 +1,4 @@
 # Fractals
 
-<h1>First python project<h1>
+First python project
 
-<br/> 
-<br/> 
-
-Might create a GUI or a website.
