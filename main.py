@@ -46,7 +46,6 @@ for i in tqdm(range(len(x))):
         k += 1
         z = pow(z, 2) + c
 
-
     nbIterationsMade.append(k)
 
 """ Creating picture with matplotlib.pyplot"""
