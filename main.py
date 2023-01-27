@@ -9,8 +9,8 @@ import numpy as np
 """ Constant Declaration """
 
 sizePoints = 00.1
-sizeImage = 500  # number of pixels on one side of the picture
-nbIteration = 60
+sizeImage = 1000  # number of pixels on one side of the picture
+nbIteration = 40
 
 """ Ask for inputs and creating the number """
 
