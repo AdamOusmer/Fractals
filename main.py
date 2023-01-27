@@ -31,7 +31,6 @@ for i in tqdm(temporaryTable):
         x.append(i)
         y.append(k)
 
-
 """ Calculation for the colors """
 
 print("Generating values...")
@@ -40,7 +39,7 @@ nbIterationsMade = []
 
 for i in tqdm(range(len(x))):
     k = 0
-    z = x[i] + (y[i] *1j)
+    z = x[i] + (y[i] * 1j)
 
     while np.absolute(z) < 3 and k < nbIteration:
         k += 1
@@ -63,7 +62,4 @@ ppl.tick_params(axis='y', which='both', right=False, left=False, labelleft=False
 for pos in ['right', 'top', 'bottom', 'left']:
     ppl.gca().spines[pos].set_visible(False)
 
-
-
 ppl.show()
-
